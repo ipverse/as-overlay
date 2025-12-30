@@ -12,7 +12,7 @@ Each entry has the following fields:
 
 ```json
 {
-  "asn": 12345,
+  "asn": 64512,
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "countryCode": "US",
@@ -22,37 +22,39 @@ Each entry has the following fields:
 
 ### Fields
 
+Fields must appear in this exact order:
+
 - `asn` (required) - The AS number
+- `handle` (optional, but must be paired with `description`) - AS handle/name (uppercase, no spaces, keep it short)
+- `description` (optional, but must be paired with `handle`) - Network description
+- `countryCode` (required) - ISO 3166-1 alpha-2 country code
 - `reason` (required) - Why this overlay exists (must be either `missing` or `correction`):
-  - `missing` - Adding data that's null in WHOIS records (e.g., null country code, or completely missing AS metadata)
-  - `correction` - Fixing mistakes in inferred metadata (never use this for authoritative WHOIS records)
-- `handle` (optional) - AS handle/name (uppercase, no spaces, keep it short)
-- `description` (optional) - Network description
-- `countryCode` (optional) - ISO 3166-1 alpha-2 country code
+  - `missing` - Adding metadata that's missing (e.g., just country code, or completely missing metadata)
+  - `correction` - Fixing mistakes in inferred metadata (never use this for authoritative metadata)
 
 ### Valid combinations
 
 You can overlay:
-1. Just the country code
-2. Handle and description together (with or without country)
+1. Country code only (for AS with metadata but missing country)
+2. Handle, description, and country code (for complete metadata)
 
-Handle and description must always be specified together - you can't have one without the other.
+**Note:** Country code is always required. Handle and description must be specified together - you can't have one without the other. Fields must appear in the order shown above.
 
 ## When to add entries
 
 **Country code is null** (origin: `authoritative`):
 ```json
 {
-  "asn": 12345,
+  "asn": 64512,
   "countryCode": "US",
   "reason": "missing"
 }
 ```
 
-**Metadata is null** (no WHOIS record, AS is announcing prefixes):
+**Missing metadata** (origin: `none`):
 ```json
 {
-  "asn": 12345,
+  "asn": 64512,
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "countryCode": "US",
@@ -63,9 +65,10 @@ Handle and description must always be specified together - you can't have one wi
 **Inferred metadata is wrong** (origin: `inferred`):
 ```json
 {
-  "asn": 12345,
+  "asn": 64512,
   "handle": "ACME-NET",
   "description": "Acme Corporation",
+  "countryCode": "US",
   "reason": "correction"
 }
 ```

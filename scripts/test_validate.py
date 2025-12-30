@@ -88,6 +88,16 @@ class TestValidation(unittest.TestCase):
         ])
         self.assertFalse(self.run_validation())
 
+    def test_missing_required_country_code(self):
+        """Test error when countryCode field is missing."""
+        self.write_overlay([
+            {
+                "asn": 12345,
+                "reason": "missing"
+            }
+        ])
+        self.assertFalse(self.run_validation())
+
     def test_invalid_country_code(self):
         """Test error for invalid country code."""
         self.write_overlay([
@@ -212,15 +222,6 @@ class TestValidation(unittest.TestCase):
         ])
         self.assertFalse(self.run_validation())
 
-    def test_entry_without_data(self):
-        """Test error when entry has no country code or handle/description."""
-        self.write_overlay([
-            {
-                "asn": 12345,
-                "reason": "missing"
-            }
-        ])
-        self.assertFalse(self.run_validation())
 
     def test_correction_reason_with_country_only(self):
         """Test error when using correction reason for country-only overlay."""
@@ -232,6 +233,7 @@ class TestValidation(unittest.TestCase):
             }
         ])
         self.assertFalse(self.run_validation())
+
 
     def test_reserved_asn_zero(self):
         """Test error for reserved ASN 0."""
@@ -313,6 +315,30 @@ class TestValidation(unittest.TestCase):
         self.write_overlay({"asn": 12345})
         self.assertFalse(self.run_validation())
 
+    def test_incorrect_field_order(self):
+        """Test error when fields are in wrong order."""
+        self.write_overlay([
+            {
+                "asn": 12345,
+                "reason": "missing",  # reason should be last
+                "countryCode": "US"
+            }
+        ])
+        self.assertFalse(self.run_validation())
+
+    def test_incorrect_field_order_with_handle(self):
+        """Test error when fields with handle/description are in wrong order."""
+        self.write_overlay([
+            {
+                "asn": 12345,
+                "countryCode": "US",  # countryCode should come after description
+                "handle": "TEST-NET",
+                "description": "Test Network",
+                "reason": "missing"
+            }
+        ])
+        self.assertFalse(self.run_validation())
+
     def test_multiple_valid_entries(self):
         """Test multiple valid entries in correct order."""
         self.write_overlay([
@@ -332,6 +358,7 @@ class TestValidation(unittest.TestCase):
                 "asn": 3000,
                 "handle": "SAMPLE-AS",
                 "description": "Sample AS",
+                "countryCode": "JP",
                 "reason": "missing"
             }
         ])

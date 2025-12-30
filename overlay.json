@@ -3,6 +3,7 @@
     "asn": 1636,
     "handle": "DOD-NIC",
     "description": "U.S. Department of Defense Network Information Center",
+    "countryCode": "US",
     "reason": "missing"
   },
   {
@@ -19,6 +20,7 @@
     "asn": 4134,
     "handle": "CHINANET-BACKBONE",
     "description": "China Telecom",
+    "countryCode": "CN",
     "reason": "missing"
   },
   {
