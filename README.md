@@ -13,7 +13,6 @@ Each entry has the following fields:
 ```json
 {
   "asn": 12345,
-  "rir": "ARIN",
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "countryCode": "US",
@@ -27,7 +26,6 @@ Each entry has the following fields:
 - `reason` (required) - Why this overlay exists (must be either `missing` or `correction`):
   - `missing` - Adding data that's null in WHOIS records (e.g., null country code, or completely missing AS metadata)
   - `correction` - Fixing mistakes in inferred metadata (never use this for authoritative WHOIS records)
-- `rir` (optional) - Which RIR manages this AS
 - `handle` (optional) - AS handle/name (uppercase, no spaces, keep it short)
 - `description` (optional) - Network description
 - `countryCode` (optional) - ISO 3166-1 alpha-2 country code
@@ -55,7 +53,6 @@ Handle and description must always be specified together - you can't have one wi
 ```json
 {
   "asn": 12345,
-  "rir": "ARIN",
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "countryCode": "US",
@@ -67,7 +64,6 @@ Handle and description must always be specified together - you can't have one wi
 ```json
 {
   "asn": 12345,
-  "rir": "ARIN",
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "reason": "correction"
@@ -88,9 +84,8 @@ When adding new entries:
    - PeeringDB entries
    - BGP looking glass data (Hurricane Electric, RouteViews)
    - RIR stats and lookup tools (RIPE Stat, ARIN's ASN lookup)
-3. Include the `rir` field if known
-4. Keep descriptions concise and factual
-5. Keep PRs small - each entry is reviewed manually, so submit just a few entries at a time
+3. Keep descriptions concise and factual
+4. Keep PRs small - each entry is reviewed manually, so submit just a few entries at a time
 
 ### Validation
 

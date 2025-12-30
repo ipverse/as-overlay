@@ -48,7 +48,6 @@ class TestValidation(unittest.TestCase):
         self.write_overlay([
             {
                 "asn": 12345,
-                "rir": "ARIN",
                 "countryCode": "US",
                 "reason": "missing"
             }
@@ -60,7 +59,6 @@ class TestValidation(unittest.TestCase):
         self.write_overlay([
             {
                 "asn": 12345,
-                "rir": "ARIN",
                 "handle": "ACME-NET",
                 "description": "Acme Corporation",
                 "countryCode": "US",
@@ -123,17 +121,6 @@ class TestValidation(unittest.TestCase):
         ])
         self.assertFalse(self.run_validation())
 
-    def test_invalid_rir(self):
-        """Test error for invalid RIR."""
-        self.write_overlay([
-            {
-                "asn": 12345,
-                "rir": "INVALID",
-                "countryCode": "US",
-                "reason": "missing"
-            }
-        ])
-        self.assertFalse(self.run_validation())
 
     def test_duplicate_asn(self):
         """Test error for duplicate ASN."""
@@ -313,18 +300,6 @@ class TestValidation(unittest.TestCase):
         # Should still pass validation (warning only)
         self.assertTrue(self.run_validation())
 
-    def test_missing_rir_warning(self):
-        """Test warning when RIR missing with complete metadata (should pass but warn)."""
-        self.write_overlay([
-            {
-                "asn": 12345,
-                "handle": "ACME-NET",
-                "description": "Acme Corporation",
-                "reason": "missing"
-            }
-        ])
-        # Should still pass validation (warning only)
-        self.assertTrue(self.run_validation())
 
     def test_invalid_json(self):
         """Test error for invalid JSON syntax."""
@@ -343,13 +318,11 @@ class TestValidation(unittest.TestCase):
         self.write_overlay([
             {
                 "asn": 1000,
-                "rir": "ARIN",
                 "countryCode": "US",
                 "reason": "missing"
             },
             {
                 "asn": 2000,
-                "rir": "RIPE",
                 "handle": "TEST-NET",
                 "description": "Test Network",
                 "countryCode": "GB",
@@ -357,7 +330,6 @@ class TestValidation(unittest.TestCase):
             },
             {
                 "asn": 3000,
-                "rir": "APNIC",
                 "handle": "SAMPLE-AS",
                 "description": "Sample AS",
                 "reason": "missing"

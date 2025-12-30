@@ -9,7 +9,6 @@ import pycountry
 
 VALID_COUNTRY_CODES = {country.alpha_2 for country in pycountry.countries}
 
-VALID_RIRS = {'AFRINIC', 'APNIC', 'ARIN', 'LACNIC', 'RIPE'}
 VALID_REASONS = {'missing', 'correction'}
 
 # ASN validation ranges
@@ -107,11 +106,6 @@ def validate_overlay():
     if reason and reason not in VALID_REASONS:
       errors.append(f"Entry {line} (AS{asn}): Invalid reason '{reason}', must be 'missing' or 'correction'")
 
-    # Validate RIR if present
-    rir = entry.get('rir')
-    if rir and rir not in VALID_RIRS:
-      errors.append(f"Entry {line} (AS{asn}): Invalid RIR '{rir}', must be one of {', '.join(sorted(VALID_RIRS))}")
-
     # Validate country code if present
     country_code = entry.get('countryCode')
     if country_code:
@@ -158,12 +152,8 @@ def validate_overlay():
     if country_code and not has_handle and reason == 'correction':
       errors.append(f"Entry {line} (AS{asn}): Cannot use reason='correction' for country-only overlay (use 'missing')")
 
-    # Warn if complete metadata (handle/description) provided without RIR
-    if has_handle and not rir:
-      warnings.append(f"Entry {line} (AS{asn}): 'rir' field missing - include if known (see Contributing guidelines)")
-
     # Check for unexpected fields
-    expected_fields = {'asn', 'reason', 'rir', 'handle', 'description', 'countryCode'}
+    expected_fields = {'asn', 'reason', 'handle', 'description', 'countryCode'}
     unexpected = set(entry.keys()) - expected_fields
     if unexpected:
       warnings.append(f"Entry {line} (AS{asn}): Unexpected fields: {', '.join(unexpected)}")
