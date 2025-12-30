@@ -1,0 +1,1931 @@
+[
+  {
+    "asn": 1636,
+    "rir": "ARIN",
+    "handle": "DOD-NIC",
+    "description": "U.S. Department of Defense Network Information Center",
+    "reason": "missing"
+  },
+  {
+    "asn": 2609,
+    "rir": "RIPE",
+    "countryCode": "TN",
+    "reason": "missing"
+  },
+  {
+    "asn": 3267,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 4134,
+    "rir": "APNIC",
+    "handle": "CHINANET-BACKBONE",
+    "description": "China Telecom",
+    "reason": "missing"
+  },
+  {
+    "asn": 6829,
+    "rir": "RIPE",
+    "countryCode": "NO",
+    "reason": "missing"
+  },
+  {
+    "asn": 8346,
+    "rir": "RIPE",
+    "countryCode": "SN",
+    "reason": "missing"
+  },
+  {
+    "asn": 8452,
+    "rir": "RIPE",
+    "countryCode": "EG",
+    "reason": "missing"
+  },
+  {
+    "asn": 8522,
+    "rir": "RIPE",
+    "countryCode": "GR",
+    "reason": "missing"
+  },
+  {
+    "asn": 8793,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 9053,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 9159,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 9175,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 11157,
+    "rir": "AFRINIC",
+    "countryCode": "ZA",
+    "reason": "missing"
+  },
+  {
+    "asn": 12507,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 15585,
+    "rir": "RIPE",
+    "countryCode": "CH",
+    "reason": "missing"
+  },
+  {
+    "asn": 15808,
+    "rir": "RIPE",
+    "countryCode": "KE",
+    "reason": "missing"
+  },
+  {
+    "asn": 15913,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 16030,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 20598,
+    "rir": "RIPE",
+    "countryCode": "NG",
+    "reason": "missing"
+  },
+  {
+    "asn": 20686,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 20691,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 20955,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 20958,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 21115,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 21137,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 21491,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 22354,
+    "rir": "AFRINIC",
+    "countryCode": "TZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 24613,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 24691,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 24840,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 25093,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 25377,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 25429,
+    "rir": "RIPE",
+    "countryCode": "BI",
+    "reason": "missing"
+  },
+  {
+    "asn": 28732,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 29015,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 29032,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 29039,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 29532,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 30931,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 31000,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 31221,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 31497,
+    "rir": "RIPE",
+    "countryCode": "PT",
+    "reason": "missing"
+  },
+  {
+    "asn": 33845,
+    "rir": "RIPE",
+    "countryCode": "CH",
+    "reason": "missing"
+  },
+  {
+    "asn": 33924,
+    "rir": "RIPE",
+    "countryCode": "AL",
+    "reason": "missing"
+  },
+  {
+    "asn": 34141,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 34234,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 34403,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 34404,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 34439,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 34513,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 34678,
+    "rir": "RIPE",
+    "countryCode": "IS",
+    "reason": "missing"
+  },
+  {
+    "asn": 34703,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 34767,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 34772,
+    "rir": "RIPE",
+    "countryCode": "MK",
+    "reason": "missing"
+  },
+  {
+    "asn": 34928,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 35091,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 35130,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 35314,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 35359,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 35378,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 35535,
+    "rir": "RIPE",
+    "countryCode": "LI",
+    "reason": "missing"
+  },
+  {
+    "asn": 35548,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 35592,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 35704,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 35738,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 35785,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 35805,
+    "rir": "RIPE",
+    "countryCode": "GE",
+    "reason": "missing"
+  },
+  {
+    "asn": 35834,
+    "rir": "RIPE",
+    "countryCode": "IS",
+    "reason": "missing"
+  },
+  {
+    "asn": 36997,
+    "rir": "AFRINIC",
+    "countryCode": "UG",
+    "reason": "missing"
+  },
+  {
+    "asn": 37110,
+    "rir": "AFRINIC",
+    "countryCode": "MZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 38949,
+    "rir": "RIPE",
+    "countryCode": "SK",
+    "reason": "missing"
+  },
+  {
+    "asn": 38987,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 39069,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 39145,
+    "rir": "RIPE",
+    "countryCode": "LI",
+    "reason": "missing"
+  },
+  {
+    "asn": 39202,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 39311,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 39353,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 39392,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 39418,
+    "rir": "RIPE",
+    "countryCode": "IS",
+    "reason": "missing"
+  },
+  {
+    "asn": 39592,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 39603,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 39620,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 39719,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 39780,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 39791,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 39810,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 39817,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 39906,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 40964,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 40973,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 40981,
+    "rir": "RIPE",
+    "countryCode": "ME",
+    "reason": "missing"
+  },
+  {
+    "asn": 41006,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41034,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 41088,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 41094,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 41109,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 41201,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41256,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41275,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 41312,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41344,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 41356,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41362,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 41421,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41424,
+    "rir": "RIPE",
+    "countryCode": "LV",
+    "reason": "missing"
+  },
+  {
+    "asn": 41541,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 41670,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 41693,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 41734,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 41783,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 41819,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 41931,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 42099,
+    "rir": "RIPE",
+    "countryCode": "LV",
+    "reason": "missing"
+  },
+  {
+    "asn": 42215,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 42235,
+    "rir": "RIPE",
+    "countryCode": "XX",
+    "reason": "missing"
+  },
+  {
+    "asn": 42277,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 42289,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 42303,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 42396,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 42463,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 42515,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 42539,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 42586,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 42622,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 42739,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 42851,
+    "rir": "RIPE",
+    "countryCode": "BE",
+    "reason": "missing"
+  },
+  {
+    "asn": 42860,
+    "rir": "RIPE",
+    "countryCode": "CH",
+    "reason": "missing"
+  },
+  {
+    "asn": 42882,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 42894,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 42933,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 43019,
+    "rir": "RIPE",
+    "countryCode": "LB",
+    "reason": "missing"
+  },
+  {
+    "asn": 43037,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43045,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 43066,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 43128,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 43173,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 43179,
+    "rir": "RIPE",
+    "countryCode": "BA",
+    "reason": "missing"
+  },
+  {
+    "asn": 43248,
+    "rir": "RIPE",
+    "countryCode": "SK",
+    "reason": "missing"
+  },
+  {
+    "asn": 43281,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 43342,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 43352,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 43413,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43435,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 43507,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43541,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43571,
+    "rir": "RIPE",
+    "countryCode": "IS",
+    "reason": "missing"
+  },
+  {
+    "asn": 43608,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 43679,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 43697,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 43707,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 43709,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43846,
+    "rir": "RIPE",
+    "countryCode": "ME",
+    "reason": "missing"
+  },
+  {
+    "asn": 43895,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 43954,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 44002,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 44065,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 44092,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 44143,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 44156,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 44232,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 44244,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 44276,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 44294,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 44298,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 44365,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 44377,
+    "rir": "RIPE",
+    "countryCode": "HR",
+    "reason": "missing"
+  },
+  {
+    "asn": 44424,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 44442,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 44489,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 44510,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 44613,
+    "rir": "RIPE",
+    "countryCode": "LT",
+    "reason": "missing"
+  },
+  {
+    "asn": 44637,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 44644,
+    "rir": "RIPE",
+    "countryCode": "IS",
+    "reason": "missing"
+  },
+  {
+    "asn": 44723,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 44770,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 44883,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 44914,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 44945,
+    "rir": "RIPE",
+    "countryCode": "HU",
+    "reason": "missing"
+  },
+  {
+    "asn": 45256,
+    "rir": "APNIC",
+    "handle": "CT-LAB-AS-AP",
+    "description": "China Telecom Lab",
+    "reason": "missing"
+  },
+  {
+    "asn": 47128,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 47155,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 47202,
+    "rir": "RIPE",
+    "countryCode": "PT",
+    "reason": "missing"
+  },
+  {
+    "asn": 47233,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 47415,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 47430,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 47451,
+    "rir": "RIPE",
+    "countryCode": "ME",
+    "reason": "missing"
+  },
+  {
+    "asn": 47476,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 47524,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 47631,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 47866,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 47871,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 47875,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 48033,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 48053,
+    "rir": "RIPE",
+    "countryCode": "GR",
+    "reason": "missing"
+  },
+  {
+    "asn": 48072,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 48135,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 48347,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 48429,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 48436,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 48469,
+    "rir": "RIPE",
+    "countryCode": "NO",
+    "reason": "missing"
+  },
+  {
+    "asn": 49001,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 49044,
+    "rir": "RIPE",
+    "countryCode": "SK",
+    "reason": "missing"
+  },
+  {
+    "asn": 49167,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 49220,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 49389,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 49593,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 49653,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 49731,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 49950,
+    "rir": "RIPE",
+    "countryCode": "BG",
+    "reason": "missing"
+  },
+  {
+    "asn": 50047,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 50417,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 50730,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 50895,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 50981,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 51025,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 51277,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 51290,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 51443,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 51485,
+    "rir": "RIPE",
+    "countryCode": "HR",
+    "reason": "missing"
+  },
+  {
+    "asn": 51504,
+    "rir": "RIPE",
+    "countryCode": "EE",
+    "reason": "missing"
+  },
+  {
+    "asn": 51590,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 51652,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 51870,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 52130,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 52178,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 56765,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 57591,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 57637,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 57651,
+    "rir": "RIPE",
+    "countryCode": "CH",
+    "reason": "missing"
+  },
+  {
+    "asn": 58082,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 58120,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 58213,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 59964,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 60047,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 60116,
+    "rir": "RIPE",
+    "countryCode": "FI",
+    "reason": "missing"
+  },
+  {
+    "asn": 60155,
+    "rir": "RIPE",
+    "countryCode": "IE",
+    "reason": "missing"
+  },
+  {
+    "asn": 60831,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 60848,
+    "rir": "RIPE",
+    "countryCode": "NO",
+    "reason": "missing"
+  },
+  {
+    "asn": 62237,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 64465,
+    "rir": "RIPE",
+    "countryCode": "SI",
+    "reason": "missing"
+  },
+  {
+    "asn": 196624,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 196721,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 196830,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 196852,
+    "rir": "RIPE",
+    "countryCode": "LT",
+    "reason": "missing"
+  },
+  {
+    "asn": 197136,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 197233,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 197504,
+    "rir": "RIPE",
+    "countryCode": "UZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 197674,
+    "rir": "RIPE",
+    "countryCode": "LB",
+    "reason": "missing"
+  },
+  {
+    "asn": 197745,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 197787,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 197847,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 198310,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 198342,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 198360,
+    "rir": "RIPE",
+    "countryCode": "RS",
+    "reason": "missing"
+  },
+  {
+    "asn": 198813,
+    "rir": "RIPE",
+    "countryCode": "CZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 198878,
+    "rir": "RIPE",
+    "countryCode": "ES",
+    "reason": "missing"
+  },
+  {
+    "asn": 198926,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 199087,
+    "rir": "RIPE",
+    "countryCode": "FI",
+    "reason": "missing"
+  },
+  {
+    "asn": 199262,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  },
+  {
+    "asn": 199369,
+    "rir": "RIPE",
+    "countryCode": "PL",
+    "reason": "missing"
+  },
+  {
+    "asn": 199672,
+    "rir": "RIPE",
+    "countryCode": "NO",
+    "reason": "missing"
+  },
+  {
+    "asn": 199681,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 200043,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 200377,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 200964,
+    "rir": "RIPE",
+    "countryCode": "HU",
+    "reason": "missing"
+  },
+  {
+    "asn": 201025,
+    "rir": "RIPE",
+    "countryCode": "IL",
+    "reason": "missing"
+  },
+  {
+    "asn": 201369,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 201452,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 201935,
+    "rir": "RIPE",
+    "countryCode": "IT",
+    "reason": "missing"
+  },
+  {
+    "asn": 202251,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 202273,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 202317,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 203337,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 203651,
+    "rir": "RIPE",
+    "countryCode": "FR",
+    "reason": "missing"
+  },
+  {
+    "asn": 203916,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 205037,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 206443,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 206783,
+    "rir": "RIPE",
+    "countryCode": "AM",
+    "reason": "missing"
+  },
+  {
+    "asn": 207077,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 207315,
+    "rir": "RIPE",
+    "countryCode": "NL",
+    "reason": "missing"
+  },
+  {
+    "asn": 207350,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 207351,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 207507,
+    "rir": "RIPE",
+    "countryCode": "KZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 207834,
+    "rir": "RIPE",
+    "countryCode": "DE",
+    "reason": "missing"
+  },
+  {
+    "asn": 207971,
+    "rir": "RIPE",
+    "countryCode": "CY",
+    "reason": "missing"
+  },
+  {
+    "asn": 208264,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 208601,
+    "rir": "RIPE",
+    "countryCode": "CY",
+    "reason": "missing"
+  },
+  {
+    "asn": 209841,
+    "rir": "RIPE",
+    "countryCode": "BG",
+    "reason": "missing"
+  },
+  {
+    "asn": 209927,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 210131,
+    "rir": "RIPE",
+    "countryCode": "AM",
+    "reason": "missing"
+  },
+  {
+    "asn": 210210,
+    "rir": "RIPE",
+    "countryCode": "DK",
+    "reason": "missing"
+  },
+  {
+    "asn": 210341,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 210889,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 211056,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 211089,
+    "rir": "RIPE",
+    "countryCode": "BY",
+    "reason": "missing"
+  },
+  {
+    "asn": 211634,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 211763,
+    "rir": "RIPE",
+    "countryCode": "AT",
+    "reason": "missing"
+  },
+  {
+    "asn": 211847,
+    "rir": "RIPE",
+    "countryCode": "UA",
+    "reason": "missing"
+  },
+  {
+    "asn": 211863,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 212022,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 213136,
+    "rir": "RIPE",
+    "countryCode": "AU",
+    "reason": "missing"
+  },
+  {
+    "asn": 213471,
+    "rir": "RIPE",
+    "countryCode": "JP",
+    "reason": "missing"
+  },
+  {
+    "asn": 213595,
+    "rir": "RIPE",
+    "countryCode": "SE",
+    "reason": "missing"
+  },
+  {
+    "asn": 213604,
+    "rir": "RIPE",
+    "countryCode": "JP",
+    "reason": "missing"
+  },
+  {
+    "asn": 213944,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214361,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214384,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214515,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214526,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214733,
+    "rir": "RIPE",
+    "countryCode": "RU",
+    "reason": "missing"
+  },
+  {
+    "asn": 214922,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 214923,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 215156,
+    "rir": "RIPE",
+    "countryCode": "IL",
+    "reason": "missing"
+  },
+  {
+    "asn": 215350,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 215496,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 216095,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 216169,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 216202,
+    "rir": "RIPE",
+    "countryCode": "KZ",
+    "reason": "missing"
+  },
+  {
+    "asn": 216344,
+    "rir": "RIPE",
+    "countryCode": "IR",
+    "reason": "missing"
+  },
+  {
+    "asn": 216356,
+    "rir": "RIPE",
+    "countryCode": "TR",
+    "reason": "missing"
+  },
+  {
+    "asn": 216361,
+    "rir": "RIPE",
+    "countryCode": "GB",
+    "reason": "missing"
+  }
+]
