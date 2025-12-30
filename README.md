@@ -92,6 +92,20 @@ When adding new entries:
 4. Keep descriptions concise and factual
 5. Keep PRs small - each entry is reviewed manually, so submit just a few entries at a time
 
+### Validation
+
+Before submitting, you can validate your changes locally:
+
+```bash
+# Install dependencies
+pip install pycountry
+
+# Validate your changes
+python scripts/validate.py
+```
+
+All pull requests are automatically validated via GitHub Actions.
+
 Example PR description:
 ```
 Adding AS64512 - missing from WHOIS but actively announcing prefixes
