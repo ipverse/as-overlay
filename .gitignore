@@ -17,3 +17,17 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+# AI Assistants
+.claude/
+.opencode/
+.cursor/
+.aider*
+.codeium/
+.continue/
+.copilot/
+.windsurf/
+.roo/
+.augment*/
+.codex/
+.gemini/
