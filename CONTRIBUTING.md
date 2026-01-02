@@ -34,13 +34,23 @@ The `missing` field indicates what's missing:
 
 ## Entry structure
 
-Each entry in `overlay.json` follows this format:
+Each entry in `overlay.json` follows one of two formats. For full metadata (when `"missing": "all"` or for corrections):
 
 ```json
 {
   "asn": 64512,
   "handle": "ACME-NET",
   "description": "Acme Corporation",
+  "countryCode": "US",
+  "reason": "missing"
+}
+```
+
+For country code only (when `"missing": "country"`):
+
+```json
+{
+  "asn": 64512,
   "countryCode": "US",
   "reason": "missing"
 }
@@ -59,11 +69,6 @@ Fields must appear in this exact order:
 | `reason` | Yes | `missing` (adding data that doesn't exist) or `correction` (fixing inferred metadata - never for authoritative data) |
 
 *Handle and description must be specified together - one cannot appear without the other.
-
-### Valid combinations
-
-1. **Country code only** - For AS with `"missing": "country"` (has metadata but missing country code)
-2. **Full metadata** - Handle, description, and country code together (for AS with `"missing": "all"` or corrections)
 
 ## Validation
 
