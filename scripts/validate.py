@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Validate overlay.json structure and data quality."""
 
+import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -21,10 +23,31 @@ PRIVATE_ASN_RANGES = [(64512, 65534), (4200000000, 4294967294)]
 MAX_HANDLE_LENGTH = 30
 MAX_DESCRIPTION_LENGTH = 100
 
+# Disallowed aggregators (sources that should not be cited in PRs)
+# These are data aggregators whose terms of service or data quality
+# make them unsuitable as sources for overlay data.
+DISALLOWED_AGGREGATORS = [
+    (r'[\w.-]*\.?cymru\.com', 'cymru.com'),
+    (r'ipinfo\.io', 'ipinfo.io'),
+    (r'bgp\.tools', 'bgp.tools'),
+]
+
 
 def is_asn_in_ranges(asn, ranges):
     """Check if ASN is in any of the given ranges."""
     return any(start <= asn <= end for start, end in ranges)
+
+
+def validate_pr_body(pr_body):
+    """Check PR body for references to disallowed aggregators.
+
+    Returns a list of error messages for any disallowed aggregators found.
+    """
+    errors = []
+    for pattern, name in DISALLOWED_AGGREGATORS:
+        if re.search(pattern, pr_body, re.IGNORECASE):
+            errors.append(f"PR body references disallowed aggregator: {name}")
+    return errors
 
 
 def validate_overlay():
@@ -209,6 +232,29 @@ def validate_overlay():
     return False
 
 
-if __name__ == '__main__':
-  success = validate_overlay()
+def main():
+  parser = argparse.ArgumentParser(description='Validate overlay.json structure and data quality.')
+  parser.add_argument('--pr-body', type=str, help='PR body text to check for disallowed aggregators')
+  args = parser.parse_args()
+
+  success = True
+
+  # Validate PR body if provided
+  if args.pr_body:
+    pr_errors = validate_pr_body(args.pr_body)
+    if pr_errors:
+      print("PR BODY ERRORS:")
+      for error in pr_errors:
+        print(f"  ✗ {error}")
+      print()
+      success = False
+
+  # Validate overlay.json
+  if not validate_overlay():
+    success = False
+
   sys.exit(0 if success else 1)
+
+
+if __name__ == '__main__':
+  main()

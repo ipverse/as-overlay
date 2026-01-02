@@ -10,7 +10,7 @@ import sys
 
 # Import the validation function
 sys.path.insert(0, str(Path(__file__).parent))
-from validate import validate_overlay
+from validate import validate_overlay, validate_pr_body
 
 
 class TestValidation(unittest.TestCase):
@@ -363,6 +363,65 @@ class TestValidation(unittest.TestCase):
             }
         ])
         self.assertTrue(self.run_validation())
+
+
+class TestPRBodyValidation(unittest.TestCase):
+    """Test cases for PR body aggregator validation."""
+
+    def test_cymru_subdomain_detected(self):
+        """Test that cymru.com subdomains are detected."""
+        errors = validate_pr_body("Data from whois.cymru.com")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cymru.com", errors[0])
+
+    def test_cymru_base_domain_detected(self):
+        """Test that bare cymru.com is detected."""
+        errors = validate_pr_body("Check cymru.com for info")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cymru.com", errors[0])
+
+    def test_cymru_asn_subdomain_detected(self):
+        """Test that asn.cymru.com is detected."""
+        errors = validate_pr_body("Used asn.cymru.com lookup")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cymru.com", errors[0])
+
+    def test_ipinfo_detected(self):
+        """Test that ipinfo.io is detected."""
+        errors = validate_pr_body("Source: ipinfo.io/AS12345")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("ipinfo.io", errors[0])
+
+    def test_bgp_tools_detected(self):
+        """Test that bgp.tools is detected."""
+        errors = validate_pr_body("See bgp.tools/as/12345")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("bgp.tools", errors[0])
+
+    def test_case_insensitive_detection(self):
+        """Test that detection is case-insensitive."""
+        errors = validate_pr_body("Check IPINFO.IO and BGP.TOOLS")
+        self.assertEqual(len(errors), 2)
+
+    def test_multiple_aggregators_detected(self):
+        """Test that multiple disallowed aggregators are all detected."""
+        errors = validate_pr_body("Used whois.cymru.com, ipinfo.io, and bgp.tools")
+        self.assertEqual(len(errors), 3)
+
+    def test_allowed_source_passes(self):
+        """Test that allowed sources pass validation."""
+        errors = validate_pr_body("Data from stat.ripe.net and bgpview.io")
+        self.assertEqual(len(errors), 0)
+
+    def test_empty_pr_body_passes(self):
+        """Test that empty PR body passes validation."""
+        errors = validate_pr_body("")
+        self.assertEqual(len(errors), 0)
+
+    def test_unrelated_text_passes(self):
+        """Test that unrelated text passes validation."""
+        errors = validate_pr_body("Adding AS12345 for ACME Corp based on official RIR data")
+        self.assertEqual(len(errors), 0)
 
 
 if __name__ == '__main__':
