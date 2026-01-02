@@ -6,7 +6,7 @@ Great, you want to contribute! Here's how:
 
 ## Contribution workflow
 
-1. **Find an AS** - Browse `missing-metadata.json` or `missing-countries.json` to find an AS that needs data
+1. **Find an AS** - Browse `missing.json` to find an AS that needs data
 2. **Research** - Look up the AS using primary sources (see [Where to find data](#where-to-find-data))
 3. **Add entry** - Create an entry in `overlay.json` with the data found
 4. **Validate** - Run the validation script locally to check formatting
@@ -14,31 +14,23 @@ Great, you want to contribute! Here's how:
 
 ## Finding AS to work on
 
-Two auto-generated files list AS that need overlay entries:
+The auto-generated file `missing.json` lists AS that need overlay entries:
 
-### missing-metadata.json
-
-AS with no metadata at all. Just an array of AS numbers:
-```json
-"asn": [11636, 12140, 13339, ...]
-```
-
-These entries need complete metadata (handle, description, and country code).
-
-### missing-countries.json
-
-AS that have authoritative metadata but are missing country codes. Each entry is an object:
 ```json
 {
-  "asn": 278,
-  "rir": "LACNIC",
-  "countryCode": null
+  "as": [
+    { "asn": 11636, "missing": "all" },
+    { "asn": 58531, "missing": "country" }
+  ]
 }
 ```
 
-These entries only need a country code added.
+The `missing` field indicates what's missing:
 
-**Note**: These files are auto-generated. Do not include them in your PR - only `overlay.json` should be modified.
+- `"all"` - No metadata at all. These need complete metadata (handle, description, and country code).
+- `"country"` - Has metadata but missing country code. These only need a country code added.
+
+**Note**: This file is auto-generated. Do not include it in your PR - only `overlay.json` should be modified.
 
 ## Entry structure
 
@@ -70,8 +62,8 @@ Fields must appear in this exact order:
 
 ### Valid combinations
 
-1. **Country code only** - For AS with existing metadata but missing country (from `missing-countries.json`)
-2. **Full metadata** - Handle, description, and country code together (for AS in `missing-metadata.json` or corrections)
+1. **Country code only** - For AS with `"missing": "country"` (has metadata but missing country code)
+2. **Full metadata** - Handle, description, and country code together (for AS with `"missing": "all"` or corrections)
 
 ## Validation
 
@@ -104,7 +96,7 @@ Include sources showing where the data was obtained.
 
 ### Full metadata
 
-For an AS in `missing-metadata.json` (no metadata at all):
+For an AS with `"missing": "all"` (no metadata at all):
 
 ```json
 {
@@ -132,7 +124,7 @@ For an AS with incorrect **inferred** metadata:
 
 ### Country code only
 
-For an AS in `missing-countries.json` (has metadata, missing country):
+For an AS with `"missing": "country"` (has metadata, missing country):
 
 ```json
 {
