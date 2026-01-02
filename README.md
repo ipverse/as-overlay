@@ -1,10 +1,10 @@
 # Autonomous System Metadata Overlay
 
-Sometimes autonomous systems (AS) are announcing prefixes but have no WHOIS records, or WHOIS records have missing countries. The `overlay.json` fills those gaps. This is a community-maintained file - contributions are welcome.
+Sometimes autonomous systems (AS) are announcing prefixes but have no WHOIS records, or WHOIS records have missing countries. The `overlay.json` fills those gaps. This is a community-maintained file - feel free to contribute (see Contributing below).
 
 For AS without WHOIS records, an inference mechanism is used to discover metadata automatically. When that inference is wrong, you can correct it here. Don't override handle/description from WHOIS records (origin: `authoritative`) - only add missing data or fix inferred metadata. See examples below.
 
-**Note:** When a WHOIS record appears for an AS, any overlay entry with metadata for that AS will be removed since the authoritative source now exists.
+**Note:** When a WHOIS record appears for an AS, any overlay entry with metadata for that AS will usually be removed.
 
 ## Structure
 
@@ -113,6 +113,10 @@ IRR: RADb shows aut-num AS64512 with descr "Acme Corporation"
 PeeringDB: https://www.peeringdb.com/asn/64512 confirms US location
 ```
 
+## Questions or issues?
+
+Head over to the [feedback repo](https://github.com/ipverse/feedback) if you have questions, issues, or suggestions.
+
 ## License
 
-This dataset is dedicated to the public domain under [CC0 1.0 Universal](LICENSE). You can copy, modify, and distribute the data, even for commercial purposes, without asking permission.
+This data is released under [CC0 1.0 Universal](LICENSE).
