@@ -12,9 +12,11 @@ Great, you want to contribute! Here's how:
 4. **Validate** - Run the validation script locally to check formatting
 5. **Submit PR** - Open a pull request with sources documented (see [PR description requirements](#pr-description-requirements))
 
-## Finding AS to work on
+## Why contribute?
 
-The auto-generated file `missing.json` lists AS that need overlay entries:
+You tried to use an ipverse IP block list for a specific AS and found it empty or incorrect. This happens when the AS metadata is missing from public WHOIS data. By adding an overlay entry, you help make that AS's metadata available to everyone.
+
+The auto-generated file `missing.json` lists all AS that need overlay entries:
 
 ```json
 {
@@ -25,7 +27,7 @@ The auto-generated file `missing.json` lists AS that need overlay entries:
 }
 ```
 
-The `missing` field indicates what's missing:
+The `missing` field indicates what's needed:
 
 - `"all"` - No metadata at all. These need complete metadata (handle, description, and country code).
 - `"country"` - Has metadata but missing country code. These only need a country code added.
@@ -74,12 +76,11 @@ Fields must appear in this exact order:
 
 ### Where to find data
 
-- IRR databases (RADb, RIPE, AFRINIC, etc.)
+- IRR databases (RADb)
 - PeeringDB
-- BGP looking glasses (Hurricane Electric, RouteViews)
 - BGP AS path analysis (inferring location from upstream/peer relationships)
 
-**Important**: Avoid citing ASN lookup aggregators (bgp.he.net, ipinfo.io, Team Cymru, etc.) - use primary sources instead.
+**Important**: Avoid citing ASN lookup aggregators (ipinfo.io, Team Cymru, etc.) - use primary sources instead.
 
 ### Local validation
 
