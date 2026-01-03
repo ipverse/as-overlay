@@ -82,6 +82,18 @@ Fields must appear in this exact order:
 
 **Important**: Avoid citing ASN lookup aggregators (ipinfo.io, Team Cymru, etc.) - use primary sources instead.
 
+### AI-assisted research
+
+A [SKILL.md](SKILL.md) file is available for use with AI coding assistants. It provides structured guidance for researching missing AS entries, including which sources to check and how to trace prefix ownership.
+
+**Important**: You must manually review the research results before submission. You are responsible for:
+- Verifying all sources cited actually contain the claimed data
+- Confirming the country code and organization name are correct
+- Ensuring the data is current and not stale
+- Checking that cited URLs are valid and accessible
+
+Do not submit unverified AI-generated content. PRs with incorrect or fabricated data will be rejected.
+
 ### Local validation
 
 ```bash
