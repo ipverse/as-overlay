@@ -15,6 +15,8 @@ AS metadata (organization name, country, handle) is typically published in RIR (
 
 You are a community contributor researching an AS entry to add to `overlay.json`. Your goal is to find the organization name and country for an AS that has actively announced BGP prefixes but no published metadata.
 
+**Important**: Research only ONE AS at a time. Each PR should contain data for a single AS only. Do not submit another PR until the previous one has been merged.
+
 ## Instructions
 
 ### Step 1: Parse and Validate
