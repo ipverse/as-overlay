@@ -144,7 +144,7 @@ PeeringDB: https://www.peeringdb.com/asn/64512 confirms US location
 - Add entries based on personal naming preferences
 - Add AS that are not announcing prefixes
 - Use `inferred-fix` for authoritative metadata
-- Use 'internal'
+- Use `internal`
 
 ## Questions or issues?
 
