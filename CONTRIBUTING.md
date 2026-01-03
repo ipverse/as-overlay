@@ -68,7 +68,7 @@ Fields must appear in this exact order:
 | `handle` | No* | AS handle/name (uppercase, no spaces, keep it short) |
 | `description` | No* | Network description (concise and factual) |
 | `countryCode` | Yes | ISO 3166-1 alpha-2 country code |
-| `reason` | Yes | `missing` (adding data that doesn't exist), `correction` (fixing inferred metadata - never for authoritative data), or `internal` (maintainer-only, do not use) |
+| `reason` | Yes | `missing` (adding data that doesn't exist), `inferred-fix` (fixing inferred metadata - never for authoritative data), or `internal` (maintainer-only, do not use) |
 
 *Handle and description must be specified together - one cannot appear without the other.
 
@@ -136,7 +136,7 @@ For an AS with incorrect **inferred** metadata:
   "handle": "ACME-NET",
   "description": "Acme Corporation",
   "countryCode": "US",
-  "reason": "correction"
+  "reason": "inferred-fix"
 }
 ```
 
@@ -167,7 +167,7 @@ PeeringDB: https://www.peeringdb.com/asn/64512 confirms US location
 - Change handle/description when origin is `authoritative` - only overlay missing or inferred data
 - Add entries based on personal naming preferences
 - Add AS that are not announcing prefixes
-- Use `correction` for authoritative metadata
+- Use `inferred-fix` for authoritative metadata
 
 ## Questions or issues?
 
