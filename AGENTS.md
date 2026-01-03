@@ -24,7 +24,7 @@ metadata that is missing from authoritative sources.
 2. Follow exact field order: `asn`, `handle`, `description`, `countryCode`, `reason`
 3. Entries must be sorted by ASN (ascending)
 4. `handle` and `description` must appear together or not at all
-5. Valid reasons: `missing` (adding new data) or `correction` (fixing inferred data)
+5. Valid reasons: `missing` (adding new data), `inferred-fix` (fixing inferred data), or `internal` (maintainer-only, do not use)
 6. Country codes must be valid ISO 3166-1 alpha-2
 
 ## Entry Format
