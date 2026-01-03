@@ -5,6 +5,7 @@
     { "asn": 4134, "handle": "CHINANET-BACKBONE", "description": "China Telecom", "countryCode": "CN", "reason": "internal" },
     { "asn": 8346, "countryCode": "SN", "reason": "missing" },
     { "asn": 8452, "countryCode": "EG", "reason": "missing" },
+    { "asn": 12140, "handle": "HORIZONS-TELECOM", "description": "Horizons Telecomunicações e Tecnologia S.A.", "countryCode": "BR", "reason": "missing" },
     { "asn": 15808, "countryCode": "KE", "reason": "missing" },
     { "asn": 20598, "countryCode": "NG", "reason": "missing" },
     { "asn": 21491, "countryCode": "UG", "reason": "missing" },
