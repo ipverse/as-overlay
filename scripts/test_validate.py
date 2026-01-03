@@ -223,13 +223,13 @@ class TestValidation(unittest.TestCase):
         self.assertFalse(self.run_validation())
 
 
-    def test_correction_reason_with_country_only(self):
-        """Test error when using correction reason for country-only overlay."""
+    def test_inferred_fix_reason_with_country_only(self):
+        """Test error when using inferred-fix reason for country-only overlay."""
         self.write_overlay([
             {
                 "asn": 12345,
                 "countryCode": "US",
-                "reason": "correction"
+                "reason": "inferred-fix"
             }
         ])
         self.assertFalse(self.run_validation())
@@ -352,7 +352,7 @@ class TestValidation(unittest.TestCase):
                 "handle": "TEST-NET",
                 "description": "Test Network",
                 "countryCode": "GB",
-                "reason": "correction"
+                "reason": "inferred-fix"
             },
             {
                 "asn": 3000,

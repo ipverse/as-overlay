@@ -11,7 +11,7 @@ import pycountry
 
 VALID_COUNTRY_CODES = {country.alpha_2 for country in pycountry.countries}
 
-VALID_REASONS = {'missing', 'correction'}
+VALID_REASONS = {'missing', 'inferred-fix', 'internal'}
 
 # ASN validation ranges
 MAX_ASN = 4294967295  # 2^32 - 1
@@ -156,7 +156,7 @@ def validate_overlay():
     # Validate reason
     reason = entry.get('reason')
     if reason and reason not in VALID_REASONS:
-      errors.append(f"Line {line} (AS{asn}): Invalid reason '{reason}', must be 'missing' or 'correction'")
+      errors.append(f"Line {line} (AS{asn}): Invalid reason '{reason}', must be 'missing', 'inferred-fix', or 'internal'")
 
     # Validate country code if present
     country_code = entry.get('countryCode')
@@ -197,8 +197,8 @@ def validate_overlay():
         errors.append(f"Line {line} (AS{asn}): 'description' too long ({len(description)} chars, max {MAX_DESCRIPTION_LENGTH})")
 
     # Semantic validation: if only countryCode provided (no handle/description), reason should be "missing"
-    if country_code and not has_handle and reason == 'correction':
-      errors.append(f"Line {line} (AS{asn}): Cannot use reason='correction' for country-only overlay (use 'missing')")
+    if country_code and not has_handle and reason == 'inferred-fix':
+      errors.append(f"Line {line} (AS{asn}): Cannot use reason='inferred-fix' for country-only overlay (use 'missing')")
 
     # Check for unexpected fields
     expected_fields = {'asn', 'reason', 'handle', 'description', 'countryCode'}
