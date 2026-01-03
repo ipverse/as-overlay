@@ -76,9 +76,15 @@ def validate_overlay():
     print(f"Error: Invalid JSON syntax: {e}")
     return False
 
-  # Check it's an array
+  # Check structure: { "as": [...] }
+  if not isinstance(data, dict) or 'as' not in data:
+    errors.append("overlay.json must contain an object with 'as' array")
+    print('\n'.join(errors))
+    return False
+
+  data = data['as']
   if not isinstance(data, list):
-    errors.append("overlay.json must contain a JSON array")
+    errors.append("overlay.json 'as' field must be an array")
     print('\n'.join(errors))
     return False
 

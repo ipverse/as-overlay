@@ -1,83 +1,19 @@
-[
-  {
-    "asn": 1636,
-    "handle": "DOD-NIC",
-    "description": "U.S. Department of Defense Network Information Center",
-    "countryCode": "US",
-    "reason": "missing"
-  },
-  {
-    "asn": 4134,
-    "handle": "CHINANET-BACKBONE",
-    "description": "China Telecom",
-    "countryCode": "CN",
-    "reason": "correction"
-  },
-  {
-    "asn": 2609,
-    "countryCode": "TN",
-    "reason": "missing"
-  },
-  {
-    "asn": 8346,
-    "countryCode": "SN",
-    "reason": "missing"
-  },
-  {
-    "asn": 8452,
-    "countryCode": "EG",
-    "reason": "missing"
-  },
-  {
-    "asn": 15808,
-    "countryCode": "KE",
-    "reason": "missing"
-  },
-  {
-    "asn": 20598,
-    "countryCode": "NG",
-    "reason": "missing"
-  },
-  {
-    "asn": 21491,
-    "countryCode": "UG",
-    "reason": "missing"
-  },
-  {
-    "asn": 24691,
-    "countryCode": "TG",
-    "reason": "missing"
-  },
-  {
-    "asn": 25429,
-    "countryCode": "BI",
-    "reason": "missing"
-  },
-  {
-    "asn": 29032,
-    "countryCode": "UG",
-    "reason": "missing"
-  },
-  {
-    "asn": 29039,
-    "countryCode": "UG",
-    "reason": "missing"
-  },
-  {
-    "asn": 35091,
-    "countryCode": "GH",
-    "reason": "missing"
-  },
-  {
-    "asn": 42235,
-    "countryCode": "MZ",
-    "reason": "missing"
-  },
-  {
-    "asn": 45256,
-    "handle": "CT-LAB-AS-AP",
-    "description": "China Telecom Lab",
-    "countryCode": "CN",
-    "reason": "correction"
-  }
-]
+{
+  "as": [
+    { "asn": 1636, "handle": "DOD-NIC", "description": "U.S. Department of Defense Network Information Center", "countryCode": "US", "reason": "missing" },
+    { "asn": 2609, "countryCode": "TN", "reason": "missing" },
+    { "asn": 4134, "handle": "CHINANET-BACKBONE", "description": "China Telecom", "countryCode": "CN", "reason": "correction" },
+    { "asn": 8346, "countryCode": "SN", "reason": "missing" },
+    { "asn": 8452, "countryCode": "EG", "reason": "missing" },
+    { "asn": 15808, "countryCode": "KE", "reason": "missing" },
+    { "asn": 20598, "countryCode": "NG", "reason": "missing" },
+    { "asn": 21491, "countryCode": "UG", "reason": "missing" },
+    { "asn": 24691, "countryCode": "TG", "reason": "missing" },
+    { "asn": 25429, "countryCode": "BI", "reason": "missing" },
+    { "asn": 29032, "countryCode": "UG", "reason": "missing" },
+    { "asn": 29039, "countryCode": "UG", "reason": "missing" },
+    { "asn": 35091, "countryCode": "GH", "reason": "missing" },
+    { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
+    { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "correction" }
+  ]
+}
