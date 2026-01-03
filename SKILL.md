@@ -23,44 +23,73 @@ You are a community contributor researching an AS entry to add to `overlay.json`
 
 Extract the ASN from the user's argument (e.g., `/research-missing-as 11636` means ASN 11636).
 
-Read `missing.json` and verify:
+If the user provides a prefix, note it for Step 3 (e.g., `/research-missing-as 11636 38.99.129.0/24`).
+
+If `missing.json` is available, verify:
 - The ASN exists in the file
 - The entry has `"missing": "all"`
 
-If the ASN is not found or has `"missing": "country"`, inform the user and stop.
+If the file is unavailable or the ASN isn't in it, proceed anyway - the research is still valuable.
 
 ### Step 2: Initial Discovery
 
-Fetch data from primary sources in parallel:
+Start with these sources (suggested order, but adapt as needed):
 
-1. **PeeringDB** - `https://www.peeringdb.com/asn/{ASN}`
+1. **BGP.HE.NET** - `https://bgp.he.net/AS{ASN}`
+   - Look for: announced prefixes, upstream ASes, peer ASes, any descriptive text
+   - **Important**: Note the list of IPv4/IPv6 prefixes being announced - these are critical for Step 3
+   - If the user provided a prefix, you can skip this step
+
+2. **RDAP on prefix** - Query the announced prefix (see Step 3 for endpoints)
+   - Often more reliable than ASN lookup for missing entries
+
+3. **RDAP on ASN** - `https://rdap.arin.net/registry/autnum/{ASN}` (or appropriate RIR)
+   - Query the ASN directly for any registered metadata
+
+4. **PeeringDB** - `https://www.peeringdb.com/asn/{ASN}`
    - Look for: organization name, country, network type
 
-2. **BGP.HE.NET** - `https://bgp.he.net/AS{ASN}`
-   - Look for: announced prefixes, upstream ASes, peer ASes, any descriptive text
-   - Note the list of IPv4/IPv6 prefixes being announced
+5. **RADb/IRR** - `whois -h whois.radb.net AS{ASN}`
+   - Check for route objects with organization info
 
-Record all findings. If PeeringDB has complete data, you may have enough already.
+6. **Reverse DNS** - `dig -x {first-ip-in-prefix} +short`
+   - PTR records may reveal organization
+
+Record all findings. If any source has complete data, you may have enough already.
+
+**Be creative.** If standard sources fail, try:
+- Web search for the IP address with prefix (e.g., "38.99.129.0/24")
+- Web search for the IP address without prefix (e.g., "38.99.129.0")
+- Web search for the ASN with common terms (e.g., "AS11636 network")
+- Geofeed files from upstream providers (often linked in WHOIS comments)
+- Looking up domains hosted on IPs in the prefix
+
+The goal is identification - use whatever legitimate sources help achieve it.
 
 ### Step 3: Prefix Ownership Investigation
 
-For the announced prefixes found in Step 2, trace their allocation:
+**This step is critical when ASN metadata is missing.** The announced prefixes often reveal the organization.
 
-1. Identify which RIR allocated the prefix based on the IP range:
-   - **ARIN** (North America): Use `https://rdap.arin.net/registry/ip/{prefix}`
-   - **RIPE** (Europe/Middle East/Central Asia): Use `https://rdap.db.ripe.net/ip/{prefix}`
-   - **APNIC** (Asia Pacific): Use `https://rdap.apnic.net/ip/{prefix}`
-   - **LACNIC** (Latin America/Caribbean): Use `https://rdap.lacnic.net/rdap/ip/{prefix}`
-   - **AFRINIC** (Africa): Use `https://rdap.afrinic.net/rdap/ip/{prefix}`
+For each announced prefix found in Step 2 (or provided by user):
 
-2. Query the appropriate RIR's RDAP endpoint for each prefix
+1. **Query the prefix via RDAP** (not the ASN):
+   - **ARIN**: `https://rdap.arin.net/registry/ip/{prefix}`
+   - **RIPE**: `https://rdap.db.ripe.net/ip/{prefix}`
+   - **APNIC**: `https://rdap.apnic.net/ip/{prefix}`
+   - **LACNIC**: `https://rdap.lacnic.net/rdap/ip/{prefix}`
+   - **AFRINIC**: `https://rdap.afrinic.net/rdap/ip/{prefix}`
+
+2. **Check for sub-allocations**: If the RDAP response shows a parent block (e.g., a /8 owned by a large provider like Cogent), the prefix may be a customer reassignment. Look for:
+   - `parentHandle` or parent network references
+   - rwhois referral servers mentioned in comments (e.g., `rwhois.cogentco.com:4321`)
+   - Geofeed URLs in comments (e.g., `https://geofeed.cogentco.com/geofeed.csv`)
 
 3. Record:
-   - Organization name from allocation record
+   - Organization name from allocation/reassignment record
    - Country code from allocation record
    - Any handle/identifier
 
-The organization that paid the RIR for the prefix allocation is often the AS operator.
+If RDAP only returns the parent block with no reassignment info, note this as a dead end for that source.
 
 ### Step 4: AS Path Analysis
 
@@ -114,6 +143,52 @@ Adding AS{ASN} - missing from WHOIS but actively announcing prefixes
 
 Present both the overlay.json entry and PR description to the user for review. Do NOT modify any files until the user approves.
 
+## Research Exhausted
+
+Sometimes an AS cannot be identified despite thorough research. This is a valid outcome.
+
+**Declare research exhausted when ALL of these return no useful data:**
+
+| Source | Query | Expected Result |
+|--------|-------|-----------------|
+| ARIN RDAP (ASN) | `rdap.arin.net/registry/autnum/{ASN}` | null or no org name |
+| ARIN RDAP (prefix) | `rdap.arin.net/registry/ip/{prefix}` | Parent block only, no reassignment |
+| PeeringDB | `peeringdb.com/asn/{ASN}` | No entry |
+| BGP.HE.NET | `bgp.he.net/AS{ASN}` | Empty description |
+| RADb/IRR | `whois -h whois.radb.net AS{ASN}` | No entries |
+| Reverse DNS | `dig -x {ip} +short` | No PTR or generic PTR |
+
+**When research is exhausted, report to the user:**
+
+```markdown
+## Research Exhausted for AS{ASN}
+
+Unable to identify the organization behind AS{ASN}. All primary sources returned no metadata:
+
+| Source | Result |
+|--------|--------|
+| ARIN RDAP (ASN) | {result} |
+| ARIN RDAP (prefix) | {result} |
+| PeeringDB | {result} |
+| BGP.HE.NET | {result} |
+| RADb/IRR | {result} |
+| Reverse DNS | {result} |
+
+**Announced prefixes:** {list prefixes}
+**Upstream providers:** {list upstreams if known}
+
+**Recommendation:** Skip this AS for now. Options to revisit:
+1. Monitor for future WHOIS updates
+2. Contact upstream provider ({upstream}) for customer info
+3. Check again in 3-6 months
+
+This AS cannot be added to overlay.json without organization identification.
+```
+
+**Do NOT fabricate or guess organization names.** Only create overlay.json entries when there is documented evidence of the organization's identity.
+
+**Do NOT include templates in research results.** When reporting findings (successful or exhausted), fill in all values with actual data. Never show placeholders like `{ASN}`, `{prefix}`, or `{result}` in output to the user.
+
 ## Data Freshness
 
 Be mindful of stale data. AS metadata changes over time:
@@ -141,6 +216,7 @@ When sources conflict, weight recent evidence more heavily than historical recor
 - **BGP.HE.NET**: https://bgp.he.net/AS{ASN}
 - **RIR RDAP endpoints** (see Step 3)
 - **RADb/IRR**: Query via whois if needed
+- **Reverse DNS**: For PTR record hints
 
 ### DO NOT USE (Aggregators)
 - ipinfo.io
@@ -170,13 +246,4 @@ This validates the overlay.json format before committing.
 
 ## Submit PR
 
-After validation passes, raise a pull request with sources documented in the description:
-
-```
-Adding AS{ASN} - missing from WHOIS but actively announcing prefixes
-
-Sources:
-- BGP.HE.NET: https://bgp.he.net/AS{ASN} shows active announcements
-- PeeringDB: https://www.peeringdb.com/asn/{ASN} [findings]
-- {RIR} RDAP: {prefix} allocated to {org} in {country}
-```
+After validation passes, raise a pull request with sources documented in the description (use the format from Step 6).
