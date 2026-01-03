@@ -93,13 +93,7 @@ Based on all gathered evidence:
 Format the overlay.json entry with fields in this exact order:
 
 ```json
-{
-  "asn": {ASN},
-  "handle": "{HANDLE}",
-  "description": "{Organization Name}",
-  "countryCode": "{CC}",
-  "reason": "missing"
-}
+{ "asn": {asn}, "handle": "{HANDLE}", "description": "{Organization Name}", "countryCode": "{CC}", "reason": "missing" }
 ```
 
 Format the PR description:
@@ -160,13 +154,7 @@ Per CONTRIBUTING.md, only primary sources should be cited in PRs.
 
 Full metadata entry (for `missing: "all"`):
 ```json
-{
-  "asn": 64512,
-  "handle": "ACME-NET",
-  "description": "Acme Corporation",
-  "countryCode": "US",
-  "reason": "missing"
-}
+{ "asn": 64512, "handle": "ACME-NET", "description": "Acme Corporation", "countryCode": "US", "reason": "missing" }
 ```
 
 Field order is mandatory: `asn`, `handle`, `description`, `countryCode`, `reason`
@@ -179,3 +167,16 @@ python scripts/validate.py
 ```
 
 This validates the overlay.json format before committing.
+
+## Submit PR
+
+After validation passes, raise a pull request with sources documented in the description:
+
+```
+Adding AS{ASN} - missing from WHOIS but actively announcing prefixes
+
+Sources:
+- BGP.HE.NET: https://bgp.he.net/AS{ASN} shows active announcements
+- PeeringDB: https://www.peeringdb.com/asn/{ASN} [findings]
+- {RIR} RDAP: {prefix} allocated to {org} in {country}
+```
