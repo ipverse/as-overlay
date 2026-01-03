@@ -34,31 +34,7 @@ The `missing` field indicates what's needed:
 
 **Note**: This file is auto-generated. Do not include it in your PR - only `overlay.json` should be modified.
 
-## Entry structure
-
-Each entry in `overlay.json` follows one of two formats. For full metadata (when `"missing": "all"` or for corrections):
-
-```json
-{
-  "asn": 64512,
-  "handle": "ACME-NET",
-  "description": "Acme Corporation",
-  "countryCode": "US",
-  "reason": "missing"
-}
-```
-
-For country code only (when `"missing": "country"`):
-
-```json
-{
-  "asn": 64512,
-  "countryCode": "US",
-  "reason": "missing"
-}
-```
-
-### Field definitions
+## Field definitions
 
 Fields must appear in this exact order:
 
@@ -72,7 +48,7 @@ Fields must appear in this exact order:
 
 *Handle and description must be specified together - one cannot appear without the other.
 
-## Validation
+## Research
 
 ### Where to find data
 
@@ -126,7 +102,7 @@ For an AS with `"missing": "all"` (no metadata at all):
 }
 ```
 
-### Correction
+### Fix inferred metadata
 
 For an AS with incorrect **inferred** metadata:
 
