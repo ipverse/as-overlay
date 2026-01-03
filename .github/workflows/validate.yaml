@@ -20,4 +20,6 @@ jobs:
       run: pip install pycountry
 
     - name: Validate overlay.json
-      run: python scripts/validate.py --pr-body "${{ github.event.pull_request.body }}"
+      env:
+        PR_BODY: ${{ github.event.pull_request.body }}
+      run: python scripts/validate.py --pr-body "$PR_BODY"
