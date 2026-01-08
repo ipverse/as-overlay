@@ -17,6 +17,7 @@
     { "asn": 40196, "handle": "WILLISNORTHAMERICA", "description": "Willis North America Inc", "countryCode": "US", "reason": "missing" },
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
     { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
+    { "asn": 137443, "handle": "CHANGLIAN-AS-AP", "description": "ChangLian Network Technology Co., Limited", "countryCode": "HK", "reason": "missing" },
     { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" },
     { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
     { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" },
