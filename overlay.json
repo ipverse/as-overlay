@@ -22,6 +22,6 @@
     { "asn": 140447, "handle": "DATANUSANTARA-AS-AP", "description": "PT Data Nusantara Adhikarya", "countryCode": "ID", "reason": "missing" },
     { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" },
     { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" },
-    { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
+    { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" }
   ]
 }
