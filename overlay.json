@@ -20,8 +20,8 @@
     { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" },
     { "asn": 137443, "handle": "CHANGLIAN-AS-AP", "description": "ChangLian Network Technology Co., Limited", "countryCode": "HK", "reason": "missing" },
     { "asn": 140447, "handle": "DATANUSANTARA-AS-AP", "description": "PT Data Nusantara Adhikarya", "countryCode": "ID", "reason": "missing" },
+    { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" },
     { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" },
     { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
-    { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" }
   ]
 }
