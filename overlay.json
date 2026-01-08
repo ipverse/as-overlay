@@ -6,6 +6,7 @@
     { "asn": 8346, "countryCode": "SN", "reason": "missing" },
     { "asn": 8452, "countryCode": "EG", "reason": "missing" },
     { "asn": 11636, "handle": "MB-SRVC-LTD", "description": "MB Services LTD.", "countryCode": "US", "reason": "missing" },
+    { "asn": 12140, "handle": "HORIZONS-TELECOM", "description": "Horizons Telecomunicações e Tecnologia S.A.", "countryCode": "BR", "reason": "missing" },
     { "asn": 15808, "countryCode": "KE", "reason": "missing" },
     { "asn": 20598, "countryCode": "NG", "reason": "missing" },
     { "asn": 21491, "countryCode": "UG", "reason": "missing" },
