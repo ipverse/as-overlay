@@ -24,6 +24,7 @@
     { "asn": 393305, "handle": "LCI-HQ-01", "description": "Lundquist Consulting Inc", "countryCode": "US", "reason": "missing" },
     { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" },
     { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
-    { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" }
+    { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" },
+    { "asn": 399618, "handle": "CLIS", "description": "Global Cloud Solution LLC", "countryCode": "US", "reason": "missing" }
   ]
 }
