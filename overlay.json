@@ -17,5 +17,6 @@
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
     { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
     { "asn": 399618, "handle": "CLIS", "description": "Global Cloud Solution LLC", "countryCode": "US", "reason": "missing" }
+    { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" }
   ]
 }
