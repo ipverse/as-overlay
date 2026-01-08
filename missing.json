@@ -1,6 +1,5 @@
 {
   "as": [
-    { "asn": 11636, "missing": "all" },
     { "asn": 12140, "missing": "all" },
     { "asn": 13339, "missing": "all" },
     { "asn": 14808, "missing": "all" },
@@ -49,6 +48,7 @@
     { "asn": 263364, "missing": "all" },
     { "asn": 264307, "missing": "all" },
     { "asn": 264493, "missing": "all" },
+    { "asn": 267937, "missing": "all" },
     { "asn": 268918, "missing": "all" },
     { "asn": 269275, "missing": "all" },
     { "asn": 269384, "missing": "all" },
@@ -74,6 +74,7 @@
     { "asn": 398213, "missing": "all" },
     { "asn": 398294, "missing": "all" },
     { "asn": 398644, "missing": "all" },
-    { "asn": 399618, "missing": "all" }
+    { "asn": 399618, "missing": "all" },
+    { "asn": 420042, "missing": "all" }
   ]
 }

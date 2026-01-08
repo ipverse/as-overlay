@@ -423,6 +423,29 @@ class TestPRBodyValidation(unittest.TestCase):
         errors = validate_pr_body("Adding AS12345 for ACME Corp based on official RIR data")
         self.assertEqual(len(errors), 0)
 
+    def test_multiline_pr_body_passes(self):
+        """Test that realistic multiline PR body passes validation."""
+        pr_body = """**Sources:**
+- BGP.HE.NET: https://bgp.he.net/AS12140 shows active announcements (200.195.196.0/22)
+- NIC.BR WHOIS: owner "Horizons Telecomunicações e Tecnologia S.A." (CNPJ 11.960.585/0001-08), country BR
+
+**Evidence summary:**
+- Organization: Horizons Telecomunicações e Tecnologia S.A. (determined from NIC.BR/LACNIC WHOIS aut-num record)
+- Country: BR (determined from NIC.BR WHOIS registration)"""
+        errors = validate_pr_body(pr_body)
+        self.assertEqual(len(errors), 0)
+
+    def test_multiline_pr_body_with_aggregator_fails(self):
+        """Test that multiline PR body with aggregator fails validation."""
+        pr_body = """**Sources:**
+- BGP.HE.NET: https://bgp.he.net/AS12140
+- ipinfo.io: https://ipinfo.io/AS12140
+
+**Evidence summary:**
+- Country: BR"""
+        errors = validate_pr_body(pr_body)
+        self.assertEqual(len(errors), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

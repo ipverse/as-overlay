@@ -6,6 +6,7 @@
     { "asn": 8346, "countryCode": "SN", "reason": "missing" },
     { "asn": 8452, "countryCode": "EG", "reason": "missing" },
     { "asn": 12140, "handle": "HORIZONS-TELECOM", "description": "Horizons Telecomunicações e Tecnologia S.A.", "countryCode": "BR", "reason": "missing" },
+    { "asn": 11636, "handle": "MB-SRVC-LTD", "description": "MB Services LTD.", "countryCode": "US", "reason": "missing" },
     { "asn": 15808, "countryCode": "KE", "reason": "missing" },
     { "asn": 20598, "countryCode": "NG", "reason": "missing" },
     { "asn": 21491, "countryCode": "UG", "reason": "missing" },
@@ -14,7 +15,13 @@
     { "asn": 29032, "countryCode": "UG", "reason": "missing" },
     { "asn": 29039, "countryCode": "UG", "reason": "missing" },
     { "asn": 35091, "countryCode": "GH", "reason": "missing" },
+    { "asn": 40196, "handle": "WILLISNORTHAMERICA", "description": "Willis North America Inc", "countryCode": "US", "reason": "missing" },
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
-    { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" }
+    { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
+    { "asn": 137443, "handle": "CHANGLIAN-AS-AP", "description": "ChangLian Network Technology Co., Limited", "countryCode": "HK", "reason": "missing" },
+    { "asn": 398644, "handle": "PAYA", "description": "Paya Holdings Inc.", "countryCode": "US", "reason": "missing" },
+    { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
+    { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" },
+    { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" }
   ]
 }
