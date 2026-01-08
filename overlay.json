@@ -14,8 +14,11 @@
     { "asn": 29032, "countryCode": "UG", "reason": "missing" },
     { "asn": 29039, "countryCode": "UG", "reason": "missing" },
     { "asn": 35091, "countryCode": "GH", "reason": "missing" },
+    { "asn": 40196, "handle": "WILLISNORTHAMERICA", "description": "Willis North America Inc", "countryCode": "US", "reason": "missing" },
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
     { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
-    { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" }
+    { "asn": 398294, "handle": "COMPLIANT-GAMING", "description": "Compliant Gaming LLC", "countryCode": "US", "reason": "missing" },
+    { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" },
+    { "asn": 395350, "handle": "KLX-AEROSPACE", "description": "KLX Aerospace Solutions", "countryCode": "US", "reason": "missing" }
   ]
 }
