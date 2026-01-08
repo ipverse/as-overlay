@@ -15,6 +15,7 @@
     { "asn": 29039, "countryCode": "UG", "reason": "missing" },
     { "asn": 35091, "countryCode": "GH", "reason": "missing" },
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
-    { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" }
+    { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
+    { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" }
   ]
 }
