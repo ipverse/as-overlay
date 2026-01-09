@@ -4,7 +4,7 @@ Community-maintained metadata for autonomous systems with missing or incorrect W
 
 ## What is this?
 
-Sometimes AS are announcing prefixes but have:
+Sometimes an AS is announcing prefixes but has:
 - No WHOIS records
 - Missing country codes in WHOIS
 - Incorrect inferred metadata
@@ -13,14 +13,14 @@ This overlay fills those gaps and is automatically imported into [ipverse](https
 
 ## How it works
 
-When WHOIS data is missing, ipverse uses inference to discover metadata automatically. When that inference is wrong or incomplete, this overlay provides corrections. Once authoritative WHOIS records appear, overlay entries are typically removed
+When WHOIS data is missing, ipverse uses inference to discover metadata automatically. When that inference is wrong or incomplete, this overlay provides corrections. Once authoritative WHOIS records appear, overlay entries are typically removed.
 
 ## Missing metadata
 
-The file `missing.json` lists AS with incomplete metadata. Each entry has a `missing` field indicating what's missing:
+The file `missing.json` lists autonomous systems with incomplete metadata. Each entry has a `missing` field indicating what's missing:
 
-- `"all"` - AS with no metadata at all
-- `"country"` - AS with metadata but missing country code
+- `"all"` - Autonomous systems with no metadata at all
+- `"country"` - Autonomous systems with metadata but missing country code
 
 This file is auto-generated. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to use it.
 
