@@ -19,7 +19,6 @@
     { "asn": 42235, "countryCode": "MZ", "reason": "missing" },
     { "asn": 45256, "handle": "CT-LAB-AS-AP", "description": "China Telecom Lab", "countryCode": "CN", "reason": "internal" },
     { "asn": 46073, "handle": "REEAUST-AP", "description": "Reed Elsevier Australia Pty Ltd", "countryCode": "AU", "reason": "missing" },
-    { "asn": 137443, "handle": "CHANGLIAN-AS-AP", "description": "ChangLian Network Technology Co., Limited", "countryCode": "HK", "reason": "missing" },
     { "asn": 140447, "handle": "DATANUSANTARA-AS-AP", "description": "PT Data Nusantara Adhikarya", "countryCode": "ID", "reason": "missing" },
     { "asn": 262527, "handle": "AS262527-ZECTA", "description": "ZECTA TELECOMUNICACOES LTDA", "countryCode": "BR", "reason": "missing" },
     { "asn": 393305, "handle": "LCI-HQ-01", "description": "Lundquist Consulting Inc", "countryCode": "US", "reason": "missing" },
