@@ -2,6 +2,10 @@
 
 Community-maintained metadata for autonomous systems with missing or incorrect WHOIS data.
 
+## 🔍 See it in action
+
+Explore how overlay data enriches AS metadata at **[Lens by ipverse](https://lens.ipverse.net)**.
+
 ## What is this?
 
 Sometimes an AS is announcing prefixes but has:
