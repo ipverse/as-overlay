@@ -4,4 +4,4 @@
 |:-------|-------:|----------:|----------:|
 | Missing all metadata | 60 | 11 | 49 |
 | Missing country | 13 | 12 | 1 |
-| Inferred | 4 487 | 0 | |
+| Inferred | 4 486 | 0 | |
