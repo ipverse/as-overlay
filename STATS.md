@@ -2,6 +2,6 @@
 
 | Metric | Issues | Corrected | Remaining |
 |:-------|-------:|----------:|----------:|
-| Missing all metadata | 61 | 11 | 50 |
+| Missing all metadata | 62 | 11 | 51 |
 | Missing country | 13 | 12 | 1 |
-| Inferred | 4 498 | 0 | |
+| Inferred | 4 499 | 0 | |
