@@ -7,7 +7,7 @@
     { "asn": 4134, "handle": "CHINANET-BACKBONE", "description": "China Telecom", "countryCode": "CN", "reason": "internal" },
     { "asn": 6419, "handle": "SUNGARDFS", "description": "IDD Enterprises, LP", "countryCode": "US", "reason": "internal" },
     { "asn": 8346, "countryCode": "SN", "reason": "missing" },
-    { "asn": 8452, "countryCode": "EG", "reason": "missing" },
+    { "asn": 8452, "handle": "TE-AS", "description": "Telecom Egypt", "countryCode": "EG", "reason": "internal" },
     { "asn": 9930, "handle": "TTNET-MY", "description": "TT dotCom Sdn Bhd", "countryCode": "MY", "reason": "internal" },
     { "asn": 10030, "handle": "CELCOMNET-AP", "description": "Celcom Axiata Berhad", "countryCode": "MY", "reason": "internal" },
     { "asn": 10569, "handle": "CENIA-AS", "description": "Red CENIAInternet", "countryCode": "CU", "reason": "internal" },
